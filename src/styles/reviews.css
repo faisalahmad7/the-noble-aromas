@@ -1,0 +1,169 @@
+.rev {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.rev blockquote {
+  margin: 0;
+  border-top: 2px solid var(--g);
+  padding-top: 14px;
+}
+
+.rev q {
+  font-family: Belleza, sans-serif;
+  font-size: 24px;
+  line-height: 1.25;
+  display: block;
+}
+
+.rev blockquote {
+  position: relative;
+  border-top: 1px solid var(--g);
+  padding: 26px 4px 0;
+  text-align: center;
+}
+
+.qm {
+  display: block;
+  font: 400 64px/0.6 Belleza, serif;
+  color: var(--g2);
+  height: 30px;
+}
+
+.rev q {
+  font-size: 23px;
+  line-height: 1.35;
+  quotes: none;
+  margin-bottom: 16px;
+}
+
+.rev blockquote:hover .qm {
+  transform: scale(1.25) rotate(-6deg);
+}
+
+.qm {
+  transition: transform 0.4s;
+}
+
+.gsum {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+  background: #fff;
+  border: 1px solid var(--bd);
+  padding: 20px 28px;
+  margin: 0 auto 34px;
+  max-width: 900px;
+  box-shadow: 0 10px 30px rgba(124, 90, 20, 0.08);
+}
+
+.gsum .gicon {
+  width: 40px;
+  height: 40px;
+}
+
+.gsum b {
+  display: block;
+  font: 400 20px Belleza, sans-serif;
+}
+
+.gsum small {
+  display: block;
+  color: var(--mu);
+  font-size: 12px;
+}
+
+.gn {
+  font: 400 56px/1 Belleza, sans-serif;
+  color: var(--gd);
+}
+
+.stars {
+  display: block;
+  font-size: 26px;
+  letter-spacing: 3px;
+  line-height: 1;
+  background: linear-gradient(90deg, #FBBC04 var(--p), #E3DCC8 var(--p));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rev {
+  gap: 26px;
+}
+
+.rcard {
+  position: relative;
+  background: #fff;
+  border: 1px solid var(--bd);
+  border-top: 3px solid var(--g);
+  padding: 34px 28px 24px;
+  display: flex;
+  flex-direction: column;
+  min-height: 320px;
+  box-shadow: 0 12px 30px rgba(124, 90, 20, 0.08);
+  transition: transform 0.35s, box-shadow 0.35s;
+}
+
+.rcard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 40px rgba(124, 90, 20, 0.16);
+}
+
+.rcard .qm {
+  height: 34px;
+  font-size: 80px;
+}
+
+.rcard q {
+  font-size: 25px;
+  line-height: 1.35;
+  flex: 1;
+  margin: 6px 0 24px;
+  text-align: left;
+  quotes: none;
+}
+
+.rhead {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid var(--bd);
+  padding-top: 16px;
+}
+
+.rhead > div {
+  flex: 1;
+  min-width: 0;
+}
+
+.rhead b {
+  display: block;
+  font: 500 15px Jost, sans-serif;
+}
+
+.rhead small {
+  color: var(--mu);
+  font-size: 12px;
+}
+
+.avt {
+  width: 48px;
+  height: 48px;
+  flex: none;
+  border-radius: 50%;
+}
+
+.rhead .gicon {
+  width: 24px;
+  height: 24px;
+  flex: none;
+}
+
+.rcard .qm {
+  text-align: left;
+}

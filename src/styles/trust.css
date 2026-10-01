@@ -1,0 +1,46 @@
+.trust {
+  background: var(--cr);
+}
+
+.tg {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+}
+
+.tb {
+  text-align: center;
+  min-width: 0;
+}
+
+.tb b {
+  display: block;
+  font: 400 18px Belleza, sans-serif;
+  margin-top: 14px;
+}
+
+.tb small {
+  display: block;
+  color: var(--mu);
+  font-size: 12.5px;
+  margin-top: 2px;
+}
+
+.bg {
+  display: grid;
+  place-items: center;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  background: var(--g);
+  color: #fff;
+  font-size: 28px;
+  border-radius: 34%;
+  box-shadow: 0 0 0 5px var(--cr), 0 0 0 6px var(--g2);
+  transition: transform 0.5s, border-radius 0.5s;
+}
+
+.tb:hover .bg {
+  transform: translateY(-5px) rotate(8deg);
+  border-radius: 50%;
+}

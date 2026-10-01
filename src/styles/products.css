@@ -1,0 +1,271 @@
+.tools {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.tools input,
+.tools select {
+  border: 1px solid var(--bd);
+  background: #fff;
+  padding: 10px 12px;
+  min-height: 44px;
+}
+
+.tools input {
+  flex: 1;
+  min-width: 160px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.card {
+  border: 1px solid var(--bd);
+  background: #fff;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: up 0.6s both;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(138, 99, 16, 0.15);
+}
+
+.img {
+  background: linear-gradient(160deg, #fff, var(--cr));
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border: 0;
+  width: 100%;
+}
+
+.img svg {
+  width: 46%;
+  transition: transform 0.4s;
+}
+
+.card:hover .img svg {
+  transform: scale(1.08) rotate(-3deg);
+}
+
+.cb {
+  padding: 12px 14px 16px;
+}
+
+.cb small {
+  color: var(--g);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 10.5px;
+}
+
+.cb h3 {
+  font-size: 21px;
+  margin: 2px 0;
+}
+
+.pr {
+  color: var(--mu);
+  margin-bottom: 10px;
+}
+
+.wl {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #fff;
+  border: 1px solid var(--bd);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  color: var(--g);
+  font-size: 17px;
+}
+
+.tag {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: var(--ink);
+  color: var(--g2);
+  font-size: 10px;
+  padding: 2px 8px;
+  letter-spacing: 0.1em;
+}
+
+.card {
+  background: #fff;
+  border-color: var(--bd);
+  overflow: hidden;
+}
+
+.card:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: var(--g);
+  transform: scaleX(0);
+  transition: transform 0.45s;
+  transform-origin: left;
+}
+
+.card:hover:after {
+  transform: scaleX(1);
+}
+
+.cb {
+  text-align: center;
+  padding: 14px 14px 18px;
+}
+
+.cb h3 {
+  font-size: 22px;
+}
+
+.pr {
+  font: 400 20px Belleza, sans-serif;
+  color: var(--gd);
+}
+
+.pr small {
+  font: 400 11px Jost;
+  color: var(--mu);
+  letter-spacing: 0.06em;
+}
+
+.cb small {
+  letter-spacing: 0.22em;
+}
+
+.img {
+  background: radial-gradient(circle at 50% 40%, #fff, var(--cr));
+}
+
+.wl {
+  transition: 0.3s;
+}
+
+.wl:hover {
+  background: var(--g);
+  color: #fff;
+}
+
+.img {
+  position: relative;
+  overflow: hidden;
+}
+
+.img svg {
+  animation: fl 6s ease-in-out infinite;
+  filter: drop-shadow(0 12px 14px rgba(90, 60, 10, 0.25));
+}
+
+.card:nth-child(2n) .img svg {
+  animation-delay: -2s;
+}
+
+.card:nth-child(3n) .img svg {
+  animation-delay: -4s;
+}
+
+.card:hover .img svg {
+  animation: flh 3s ease-in-out infinite;
+}
+
+@keyframes flh {
+  0%,
+  100% {
+    transform: scale(1.1) rotate(-3deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(2deg) translateY(-10px);
+  }
+}
+
+.img:before,
+.img:after {
+  content: "";
+  position: absolute;
+  bottom: 22%;
+  left: 40%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(203, 166, 82, 0.5), transparent 70%);
+  filter: blur(7px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.card:hover .img:before {
+  animation: wisp 2.4s ease-out infinite;
+}
+
+.card:hover .img:after {
+  left: 52%;
+  animation: wisp 2.4s 1.2s ease-out infinite;
+}
+
+.card {
+  transition: transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 0.35s;
+}
+
+.rev blockquote:nth-child(2) {
+  transition-delay: 0.15s;
+}
+
+.rev blockquote:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.cg {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.trio {
+  display: flex;
+  gap: 6px;
+  align-items: flex-end;
+  justify-content: center;
+  width: 72%;
+}
+
+.trio div {
+  flex: 1;
+}
+
+.trio svg {
+  width: 100%;
+  display: block;
+}
+
+.trio div:nth-child(2) {
+  transform: translateY(-10px);
+}
+
+.cmb .img svg {
+  width: 100%;
+}
+
+.cn {
+  font-size: 12px;
+  color: var(--mu);
+  margin: 0 0 8px;
+}
+
+.cmb s {
+  color: var(--mu);
+  font-size: 14px;
+}
