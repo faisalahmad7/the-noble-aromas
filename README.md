@@ -1,150 +1,48 @@
-# The Noble Aromas
+# The Noble Aromas — Perfume Store
 
-A modern frontend e-commerce demo for **The Noble Aromas**, built using React and Vite.
+A modern, responsive e-commerce frontend for **The Noble Aromas**, a perfume and fragrance brand. Built with React and Vite, the website provides a smooth shopping experience with product browsing, product details, wishlist, shopping bag, and a demo checkout flow.
 
-🌐 **Live Website:** https://thenoblearomaswebsite.vercel.app/
+## 🌐 Live Website
 
-This project is a frontend-only implementation designed to showcase a perfume/fragrance shopping experience. It includes product browsing, product details, wishlist, shopping bag, and a demo login flow.
+Visit the live website: [**The Noble Aromas**](https://thenoblearomaswebsite.vercel.app/)
 
-> **Note:** This is currently a frontend demo. There is no backend, database, real authentication, payment gateway, or real order processing.
+## ✨ Features
 
-## Tech Stack
+* **Responsive Design:** Optimized for desktop, tablet, and mobile devices.
+* **Product Catalog:** Browse a collection of perfumes and fragrance products.
+* **Product Details:** Dedicated pages with product information, scent notes, sizes, and pricing.
+* **Product Combos:** Dedicated fragrance combo offerings.
+* **Shopping Bag:** Add products, manage quantities, and view selected items.
+* **Wishlist:** Save favorite products for later.
+* **Frontend Login:** Demo login functionality handled entirely in the browser.
+* **Demo Checkout:** Frontend checkout experience for demonstration purposes.
+* **Hash-Based Routing:** Lightweight routing without requiring a backend router.
+* **Reusable Components:** Modular React components for easier maintenance and development.
+* **Local Browser Storage:** Bag, wishlist, and login state are stored locally in the browser.
 
-* React
-* Vite
-* JavaScript
-* HTML5
-* CSS3
+## 🛠️ Tech Stack
 
-## Features
+* **Frontend:** React.js
+* **Build Tool:** Vite
+* **Language:** JavaScript
+* **Styling:** CSS
+* **Routing:** Custom hash-based routing
+* **Package Manager:** npm
+* **Development:** VS Code, Git, GitHub
+* **Deployment:** Vercel
 
-### Product Catalog
-
-* 24 fragrance products
-* 3 product combos
-* Product categories and scent information
-* Different available sizes
-* Product pricing
-* Product detail pages
-
-### Shopping Bag
-
-* Add products to bag
-* Manage products stored in the browser
-* Bag state persists locally in the browser
-
-### Wishlist
-
-* Add/remove products from wishlist
-* Wishlist is stored locally in the browser
-
-### Login
-
-* Frontend-only login experience
-* Login state is stored in the browser
-* No real authentication or user accounts
-
-### Product Pages
-
-* Individual product pages
-* Product information
-* Scent notes
-* Available sizes
-* Pricing
-* Add-to-bag functionality
-
-### Checkout Demo
-
-* Frontend checkout flow
-* No real payments
-* No real order creation
-* No backend processing
-
-### Responsive Design
-
-* Designed for desktop and mobile screen sizes
-* Section-based component structure
-* Custom CSS styling
-
-## Getting Started
-
-### 1. Clone the repository
-
-```bash
-git clone <repository-url>
-cd <project-folder>
-```
-
-### 2. Open the project in VS Code
-
-Open the project folder in Visual Studio Code:
-
-**File → Open Folder**
-
-### 3. Install dependencies
-
-```bash
-npm install
-```
-
-### 4. Start the development server
-
-```bash
-npm run dev
-```
-
-Vite will display a local URL in the terminal, usually:
-
-```text
-http://localhost:5173/
-```
-
-Open the displayed URL in your browser.
-
-## Production Build
-
-Create an optimized production build:
-
-```bash
-npm run build
-```
-
-The production files will be generated inside:
-
-```text
-dist/
-```
-
-### Preview the production build
-
-```bash
-npm run preview
-```
-
-## Project Structure
+## 📁 Project Structure
 
 ```text
 The-Noble-Aromas/
-│
 ├── public/
-│
 ├── src/
 │   ├── assets/
 │   │   └── logo.webp
-│   │
-│   ├── components/
-│   │   └── ...
-│   │
-│   ├── data/
-│   │   └── ...
-│   │
-│   ├── styles/
-│   │   └── ...
-│   │
-│   ├── main.jsx
-│   └── ...
-│
-├── dist/
+│   ├── components/       # Reusable UI components
+│   ├── data/             # Products, combos, scent notes and constants
+│   ├── styles/           # Section-based CSS files
+│   └── main.jsx          # Application entry point
 ├── package.json
 ├── package-lock.json
 ├── vite.config.js
@@ -152,114 +50,183 @@ The-Noble-Aromas/
 └── README.md
 ```
 
-## Data
+## 🚀 Getting Started
 
-The project currently contains frontend/demo data including:
+Follow these steps to run the project locally.
 
-* 24 products
-* 3 product combos
-* Fragrance/scent notes
-* Product sizes
-* Product constants
-* Placeholder prices
+### Prerequisites
 
-The product data is located inside:
+Make sure you have the following installed:
 
-```text
-src/data/
-```
+* Node.js
+* npm
+* Git
+* Visual Studio Code
 
-## Routing
+### Installation
 
-The application uses hash-based routing.
+1. Clone the repository:
+
+   ```bash
+   git clone <repository-url>
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd The-Noble-Aromas
+   ```
+
+3. Install the project dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the local URL displayed in your terminal, usually:
+
+   ```text
+   http://localhost:5173
+   ```
+
+## ⚙️ Customization
+
+The project is organized into reusable components and centralized data files to make future updates easier.
+
+* **Products & Combos:** Update files inside `src/data/`.
+* **Product Information:** Modify product names, descriptions, scent notes, sizes, and pricing in the relevant data files.
+* **Components:** Modify or add reusable components inside `src/components/`.
+* **Styling:** Update the CSS files inside `src/styles/`.
+* **Logo & Assets:** Manage visual assets inside `src/assets/`.
+* **Application Entry:** `src/main.jsx` handles the main application setup.
+
+## 🛍️ Product Catalog
+
+The current demo includes:
+
+* **24 perfume/fragrance products**
+* **3 fragrance combos**
+* Scent notes and fragrance information
+* Multiple product sizes
+* Product pricing
+* Individual product pages
+
+The current product information and prices are for demonstration purposes.
+
+## 🧭 Routing
+
+The website uses lightweight hash-based routing.
 
 Examples:
 
 ```text
-#/                  Home
-#shop               Shop
-#/product/ID        Product details
+#/                    Home
+#shop                 Shop
+#/product/ID          Product Details
 ```
 
-## Browser Storage
+This approach allows the frontend to handle multiple views without requiring a separate backend routing system.
 
-Because this is a frontend-only demo, certain application states are stored locally in the user's browser:
+## 💾 Browser Storage
+
+This project currently uses browser storage for frontend functionality.
+
+The following information is stored locally:
 
 * Shopping bag
 * Wishlist
 * Login state
 
-No backend database is currently connected.
+No user accounts or server-side database are currently connected.
 
-Clearing the browser's local storage may remove this locally stored information.
+Clearing the browser's local storage may remove this information.
 
-## Checkout
+## 💳 Checkout
 
-The checkout functionality is currently a demonstration only.
+The checkout functionality is currently a frontend demonstration.
 
-There is currently:
+The project does not currently include:
 
-* No payment gateway
-* No real payment processing
-* No order database
-* No backend order processing
-* No real order confirmation system
+* Real payment processing
+* Payment gateway integration
+* Backend order processing
+* Order database
+* Real order confirmation
+* Customer account management
 
-## Deployment
+These features can be integrated in a future backend implementation.
 
-The project is deployed as a live frontend website:
+## 📦 Production Build
 
-**Live Website:** https://thenoblearomaswebsite.vercel.app/
-
-For a production build:
+To generate an optimized production build, run:
 
 ```bash
 npm run build
 ```
 
-The generated production files are located in:
+The production-ready files will be generated in:
 
 ```text
 dist/
 ```
 
-The project also contains a `wrangler.jsonc` configuration for Cloudflare deployment.
+To preview the production build locally:
 
-## Important Notes
+```bash
+npm run preview
+```
 
-The following information is currently placeholder/demo content:
+## 🌐 Deployment
+
+The website is currently deployed on **Vercel**.
+
+Live website:
+
+[**https://thenoblearomaswebsite.vercel.app/**](https://thenoblearomaswebsite.vercel.app/)
+
+The project also includes a `wrangler.jsonc` configuration for Cloudflare deployment.
+
+## ⚠️ Important Notes
+
+This project is currently a **frontend demo**.
+
+The following information may contain placeholder/demo content:
 
 * Product prices
 * Shipping information
-* Return policy
+* Return policies
 * Cash on Delivery information
 * Other store policies
 
-Before using the website for a real business, replace the placeholder information with the actual business policies.
+Actual business policies should be confirmed and updated before using the website for a production e-commerce store.
 
-## Future Improvements
+## 🔮 Future Improvements
 
-Possible future improvements include:
+Potential future improvements include:
 
 * Backend integration
 * Database integration
 * Real user authentication
-* Persistent user accounts
-* Real order management
+* Customer accounts
+* Persistent order history
 * Payment gateway integration
+* Order management
 * Admin dashboard
 * Inventory management
-* Customer order history
 * Product search and filtering
-* Real shipping integration
-* Email/order notifications
+* Shipping integration
+* Email notifications
+* Customer reviews and ratings
 
-## Project Status
+## 📄 License
 
-**Frontend Demo**
+This project was developed as a frontend demonstration for **The Noble Aromas**.
 
-The project currently focuses on the frontend shopping experience and does not include backend or payment functionality.
+Contact the repository owner for information regarding reuse, modification, or distribution.
 
-## License
-
-This project is currently intended for demonstration and development purposes.
