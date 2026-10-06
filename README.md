@@ -2,6 +2,8 @@
 
 A modern, responsive e-commerce frontend for **The Noble Aromas**, a perfume and fragrance brand. Built with React and Vite, the website provides a smooth shopping experience with product browsing, product details, wishlist, shopping bag, and a demo checkout flow.
 
+**CURRENTLY NOT FULLY COMPLETED For backend.**
+
 ## 🌐 Live Website
 
 Visit the live website: [**The Noble Aromas**](https://thenoblearomaswebsite.vercel.app/)
